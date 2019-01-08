@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop_28"
+    android:background="#070707">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="29dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pantsViewpager_shop28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="360dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:orientation="vertical"
+                    android:padding="15.5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="9.8dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/ic_flag" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:src="@drawable/ic_more" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="25dp"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="315dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:lineSpacingExtra="5dp"
+                            android:text="Elevate your style quotient this season by wearing these white coloured chinos for men from United Colors Of Benetton, your wardrobe."
+                            android:textColor="#ffffff"
+                            android:textSize="13.5sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:text="White Solid Slim Chinos"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10.6sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/shape_rectangle"
+                                android:fontFamily="@font/ari"
+                                android:gravity="center"
+                                android:letterSpacing="0.5"
+                                android:paddingLeft="14dp"
+                                android:paddingTop="6.5dp"
+                                android:paddingRight="14dp"
+                                android:paddingBottom="5.5dp"
+                                android:text="PANTS"
+                                android:textColor="#ffffff"
+                                android:textSize="6sp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.viewpagerindicator.LinePageIndicator
+                    android:id="@+id/indicator_line"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_height="30dp"
+                    app:lineWidth="105dp"
+                    app:gapWidth="8dp"
+                    app:unselectedColor="@color/grey_indicator"
+                    app:selectedColor="@color/White_indicator" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="Size"
+                    android:textColor="#ffffff"
+                    android:textSize="11sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclrerview_size28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical"
+                android:paddingLeft="15.5dp"
+                android:paddingRight="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:lineHeight="20dp"
+                    android:text="Pants"
+                    android:textColor="#ffffff"
+                    android:textSize="13.5sp" />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:lineHeight="20dp"
+                    android:text="Featuring solid pattern, these blue coloured chinos from the house of Jack &amp; Jones is a perfect blend of style and comfort."
+                    android:textColor="#ffffff"
+                    android:textSize="15.5sp" />
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.5dp"
+                    android:lineSpacingExtra="8dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections."
+                    android:textColor="#6e6e70"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/string1"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:textColor="#6e6e70"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:text="Colors"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclrerview_color28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:paddingLeft="15.4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.5dp"
+                android:layout_marginTop="21dp"
+                android:lineSpacingExtra="8dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:paddingBottom="15dp"
+                android:text="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system."
+                android:textColor="#6e6e70"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="23dp"
+        app:maxImageSize="10dp"
+        app:fabCustomSize="43dp"
+        android:layout_marginBottom="30.5dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_add_black"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        />
+
+
+</RelativeLayout>
